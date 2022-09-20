@@ -7,33 +7,33 @@ const joinList = () => {
     const email1 = $("#email_1").value;
     const email2 = $("#email_2").value;
     const firstName = $("#first_name").value;
-     
+
     // check user entries
     let isValid = true;
-    if (email1 == "") { 
+    if (email1 == "") {
         $("#email_1_error").textContent = "Email is required.";
         isValid = false;
-    } else { 
-        $("#email_1_error").textContent = ""; 
+    } else {
+        $("#email_1_error").textContent = "";
     }
 
-    if (email1 != email2) { 
+    if (email1 != email2) {
         $("#email_2_error").textContent = "Emails must match.";
         isValid = false;
-    } else { 
-        $("#email_2_error").textContent = ""; 
+    } else {
+        $("#email_2_error").textContent = "";
     }
 
     if (firstName == "") {
         $("#first_name_error").textContent = "First name is required.";
         isValid = false;
-    } else { 
-        $("#first_name_error").textContent = ""; 
+    } else {
+        $("#first_name_error").textContent = "";
     }
 
     // submit the form if user entries are valid
-    if ( isValid ) {
-        $("#email_form").submitt(); 
+    if (isValid) {
+        $("#email_form").submit();
     }
 };
 
@@ -46,7 +46,7 @@ const clearForm = () => {
     // clear span elements
     $("#email_1_error").textContent = "*";
     $("#email_2_error").textContent = "*";
-    $("#first_name_error").textContent = "*"; 
+    $("#first_name_error").textContent = "*";
 
     // set focus on first text box after resetting the form
     $("#email_1").focus();
