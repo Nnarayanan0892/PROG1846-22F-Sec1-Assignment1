@@ -14,7 +14,7 @@ const total = score1 + score2 + score3 + score4;
 const average = parseInt(total / 4);
 
 // display in dialog box
-const resultContent = `Score 1 = ${score1}\nScore 2 = ${score2}\nScore 3 = ${score2}\nScore 4 = ${score2}\n\nAverage score = ${average}`;
+const resultContent = `Score 1 = ${score1}\nScore 2 = ${score2}\nScore 3 = ${score3}\nScore 4 = ${score4}\n\nAverage score = ${average}`;
 window.alert(resultContent);
 
 // display in browser page
